@@ -1,4 +1,5 @@
 <template>
+  <Modal></Modal>
   <Table>
     <TableHeader></TableHeader>
     <Search></Search>
@@ -13,6 +14,7 @@ import TableHeader from './components/TableHeader.vue'
 import Search from './components/Search.vue'
 import FilterBy from './components/FilterBy.vue'
 import Employees from './components/Employees.vue'
+import Modal from './components/Modal.vue'
 
 export default {
   name: 'App',
@@ -21,7 +23,8 @@ export default {
     TableHeader,
     Search,
     FilterBy,
-    Employees
+    Employees,
+    Modal
   }
 }
 </script>
