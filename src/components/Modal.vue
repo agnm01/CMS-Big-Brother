@@ -74,4 +74,8 @@
     border: none;
     border-radius: 2px;
 }
+
+.required-field {
+    color: #ff5b5b;
+}
 </style>
