@@ -3,6 +3,7 @@
     <TableHeader></TableHeader>
     <Search></Search>
     <FilterBy></FilterBy>
+    <Employees></Employees>
   </Table>
 </template>
 
@@ -11,6 +12,7 @@ import Table from './components/Table.vue'
 import TableHeader from './components/TableHeader.vue'
 import Search from './components/Search.vue'
 import FilterBy from './components/FilterBy.vue'
+import Employees from './components/Employees.vue'
 
 export default {
   name: 'App',
@@ -18,18 +20,21 @@ export default {
     Table,
     TableHeader,
     Search,
-    FilterBy
+    FilterBy,
+    Employees
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+html, #app {
+  background-color: #1b1c30;
+}
+
+body {
+  color: #566787;
+  background: #f5f5f5;
+  font-family: "Varela Round", sans-serif;
+  font-size: 13px;
 }
 </style>
