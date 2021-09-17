@@ -54,4 +54,24 @@
 
 <script></script>
 
-<style scoped></style>
+<style scoped>
+.modal-cancel-btn {
+    background-color: #6235ff;
+    color: #fff;
+    width: fit-content;
+    padding: 5px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 2px;
+}
+
+.modal-add-btn {
+    background-color: #ff8348;
+    color: #fff;
+    width: fit-content;
+    padding: 5px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 2px;
+}
+</style>

@@ -18,8 +18,7 @@
 <script></script>
 
 <style scoped>
-table.table tr th,
-table.table tr td {
+table.table tr th, table.table tr td {
     border-color: #e9e9e9;
     padding: 12px 15px;
     vertical-align: middle;

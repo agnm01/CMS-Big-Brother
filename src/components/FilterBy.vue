@@ -9,4 +9,21 @@
 
 <script></script>
 
-<style scoped></style>
+<style scoped>
+.sort-description {
+    margin-top: 15px;
+}
+.filter-button {
+    background-color: #6235ff;
+    color: #fff;
+    width: fit-content;
+    padding: 5px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 2px;
+}
+
+.filter-button:hover {
+    background-color: #ff8348;
+}
+</style>
