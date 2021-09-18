@@ -33,7 +33,9 @@ export default {
 }
 
 .table-wrapper {
-    min-width: 1000px;
+    max-width: 1000px;
+    margin-left: 250px;
+    align-self: center;
     background: #fff;
     padding: 20px 25px;
     border-radius: 3px;

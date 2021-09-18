@@ -1,14 +1,20 @@
 <template>
     <div class="table-title">
         <h2>Employee Management</h2>
-        <a href="#" class="btn btn-primary" id="openEmployeeModal">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <i class="material-icons">&#xE147;</i>
             <span>Add New Employee</span>
-        </a>
+        </button>
     </div>
 </template>
 
 <script>
+//importing bootstrap 5
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
+export default {
+ 
+}
 </script>
 
 <style scoped>
