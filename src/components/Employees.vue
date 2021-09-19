@@ -15,7 +15,8 @@
     </table>
 </template>
 
-<script></script>
+<script>
+</script>
 
 <style scoped>
 table.table tr th, table.table tr td {
