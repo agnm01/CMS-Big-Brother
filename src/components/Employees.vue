@@ -11,11 +11,55 @@
                 <th>Actions</th>
             </tr>
         </thead>
-        <tbody id="tableEmployees"></tbody>
+        <tbody id="tableEmployees" v-for="employee in this.employees" :key="employee.id">
+            <tr>
+                <td>{{employee.id}}</td>
+                <td>{{employee.profilePicture}}</td>
+                <td>{{employee.name}}</td>
+                <td>{{employee.email}}</td>
+                <td>{{employee.gender}}</td>
+                <td>{{employee.birthdate}}</td>
+                <td><div class="delete-container"><a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE5C9;</i></a></div></td>
+            </tr>
+            
+        </tbody>
     </table>
 </template>
 
 <script>
+import axios from "axios";
+import Modal from "./Modal.vue"
+
+export default {
+    data() {
+        return {
+            employees: []
+        }
+    },
+    mounted() {
+        console.log('Component mounted.')
+        console.log(this.getEmployees());
+    },
+        methods: {
+            async getEmployees() {
+                    
+                // return [{"id":2,"profilePicture":"valid picture","name":"Adrian Negreanu-Maior","email":"adrian.negreanu@principal33.com","gender":"Male","birthdate":"6 February 1972"},{"id":10002,"profilePicture":null,"name":"Adrian Negreanu-Maior","email":null,"gender":null,"birthdate":null},{"id":20002,"profilePicture":"valid picture","name":"Adrian Negreanu-Maior","email":"adrian.negreanu@principal33.com","gender":"Male","birthdate":"6 February 1972"},{"id":30002,"profilePicture":"valid picture","name":"Adrian Negreanu-Maior","email":"adrian.negreanu@principal33.com","gender":"Male","birthdate":"6 February 1972"},{"id":1,"profilePicture":"valid picture","name":"Gabriel Negreanu","email":"gabriel.negreanu@principal33.com","gender":"Male","birthdate":"31 December 2001"}]
+                // let currentObj = this;
+                axios.get('https://localhost:44302/api/Employee', 
+                    {
+                        headers: {
+                            "Access-Control-Allow-Origin": "*"
+                        }
+                    })
+                .then(function (response) {
+                    this.employees = response.data;
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+            }
+        }
+}
 </script>
 
 <style scoped>
