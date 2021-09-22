@@ -20,10 +20,9 @@
         <thead>
             <tr>
                 <th>#</th>
-                <th>Photo</th>
                 <th>Name</th>
                 <th>Email</th>
-                <th>Sex</th>
+                <th>Gender</th>
                 <th>Birtdate</th>
                 <th>Actions</th>
             </tr>
@@ -31,7 +30,6 @@
         <tbody id="tableEmployees">
             <tr v-for="(employee, index) in employees" :key="employee.id">
                 <td>{{index + 1}}</td>
-                <td>{{employee.profilePicture}}</td>
                 <td>{{employee.name}}</td>
                 <td>{{employee.email}}</td>
                 <td>{{employee.gender}}</td>
