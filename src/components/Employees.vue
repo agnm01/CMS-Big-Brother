@@ -1,5 +1,4 @@
 <template>
-    <Modal @new-employee-added="getEmployees"></Modal>
     <div class="table-options">
         <div class="search-bar">
             <div class="input-group">
@@ -9,6 +8,7 @@
                 </div>
             </div>
         </div>
+        <hr>
         <p class="sort-description">Filter by gender:</p>
         <select class="form-select sort-select" id="table-sort-by" v-model="gender">
             <option class="sort-option" selected value="Male">Male</option>
@@ -16,6 +16,7 @@
         </select>
         <button id="filterButton" class="button" @click="filterEmployees">Filter</button>
     </div>
+    <Modal @new-employee-added="getEmployees"></Modal>
     <table class="table table-striped table-hover">
         <thead>
             <tr>
